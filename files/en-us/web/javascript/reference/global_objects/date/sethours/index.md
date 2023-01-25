@@ -1,6 +1,7 @@
 ---
 title: Date.prototype.setHours()
 slug: Web/JavaScript/Reference/Global_Objects/Date/setHours
+page-type: javascript-instance-method
 tags:
   - Date
   - JavaScript
@@ -9,6 +10,7 @@ tags:
   - Reference
 browser-compat: javascript.builtins.Date.setHours
 ---
+
 {{JSRef}}
 
 The **`setHours()`** method sets the hours for a specified date
@@ -19,7 +21,7 @@ according to local time, and returns the number of milliseconds since January 1,
 
 ## Syntax
 
-```js
+```js-nolint
 setHours(hoursValue)
 setHours(hoursValue, minutesValue)
 setHours(hoursValue, minutesValue, secondsValue)
@@ -40,7 +42,7 @@ setHours(hoursValue, minutesValue, secondsValue, msValue)
     you specify the `secondsValue` parameter, you must also specify
     the `minutesValue`.
 - `msValue`
-  - : Optional. Ideally, a number between 0 and 999, representing the milliseconds. If a
+  - : Optional. Ideally, a number between 0 and 999, representing the milliseconds. If a
     value greater than 999 is provided, the datetime will be incremented by the extra
     milliseconds. If you specify the `msValue` parameter, you must
     also specify the `minutesValue` and `secondsValue`.
@@ -68,7 +70,7 @@ seconds.
 ### Using setHours()
 
 ```js
-var theBigDay = new Date();
+const theBigDay = new Date();
 theBigDay.setHours(7);
 ```
 

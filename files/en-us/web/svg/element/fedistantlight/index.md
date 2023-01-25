@@ -1,6 +1,7 @@
 ---
 title: <feDistantLight>
 slug: Web/SVG/Element/feDistantLight
+page-type: svg-element
 tags:
   - Element
   - Filters
@@ -10,6 +11,7 @@ tags:
   - SVG Light Source
 browser-compat: svg.elements.feDistantLight
 ---
+
 {{SVGRef}}
 
 The **`<feDistantLight>`** filter primitive defines a distant light source that can be used within a lighting filter primitive: {{SVGElement("feDiffuseLighting")}} or {{SVGElement("feSpecularLighting")}}.
@@ -22,14 +24,14 @@ The **`<feDistantLight>`** filter primitive defines a distant light source that 
 
 ### Global attributes
 
-*   [Core attributes](/en-US/docs/Web/SVG/Attribute#core_attributes)
+- [Core attributes](/en-US/docs/Web/SVG/Attribute#core_attributes)
 
 ### Specific attributes
 
-*   {{SVGAttr("azimuth")}}
-*   {{SVGAttr("elevation")}}
+- {{SVGAttr("azimuth")}}
+- {{SVGAttr("elevation")}}
 
-## DOM Interface
+## DOM Interface
 
 This element implements the {{domxref("SVGFEDistantLightElement")}} interface.
 
@@ -43,11 +45,11 @@ This element implements the {{domxref("SVGFEDistantLightElement")}} interface.
 
 ## See also
 
-*   {{SVGElement("filter")}}
-*   {{SVGElement("animate")}}
-*   {{SVGElement("set")}}
-*   {{SVGElement("feDiffuseLighting")}}
-*   {{SVGElement("feSpecularLighting")}}
-*   {{SVGElement("fePointLight")}}
-*   {{SVGElement("feSpotLight")}}
-*   [SVG tutorial: Filter effects](/en-US/docs/Web/SVG/Tutorial/Filter_effects)
+- {{SVGElement("filter")}}
+- {{SVGElement("animate")}}
+- {{SVGElement("set")}}
+- {{SVGElement("feDiffuseLighting")}}
+- {{SVGElement("feSpecularLighting")}}
+- {{SVGElement("fePointLight")}}
+- {{SVGElement("feSpotLight")}}
+- [SVG tutorial: Filter effects](/en-US/docs/Web/SVG/Tutorial/Filter_effects)

@@ -8,6 +8,7 @@ tags:
   - manifest.json
 browser-compat: webextensions.manifest.browser_specific_settings
 ---
+
 {{AddonSidebar}}
 
 <table class="fullwidth-table standard-table">
@@ -55,7 +56,7 @@ The `browser_specific_settings` key contains keys that are specific to a particu
 Firefox stores its browser specific settings in the `gecko` subkey, which has the following properties:
 
 - `id`
-  - : Is the extension ID. Optional since Firefox 48, where the extension ID is derived from the extension's signature. Mandatory if the extension is unsigned (and not loaded via `about:debugging`). See [Extensions and the Add-on ID](https://extensionworkshop.com/documentation/develop/extensions-and-the-add-on-id/) to see when you need to specify an add-on ID.
+  - : The extension ID. For extensions submitted to [addons.mozilla.org](https://addons.mozilla.org/) (AMO), see [Extensions and the Add-on ID](https://extensionworkshop.com/documentation/develop/extensions-and-the-add-on-id/) to determine when you need to specify the ID. When required by AMO, this property must contain 80 characters or less. For extensions not submitted to AMO, if the extension is unsigned (and not loaded using `about:debugging`) an ID is required; otherwise, ID is optional.
 - `strict_min_version`
   - : Minimum version of Gecko to support. Versions containing a "\*" are not valid in this field. Defaults to "42a1".
 - `strict_max_version`
@@ -63,13 +64,13 @@ Firefox stores its browser specific settings in the `gecko` subkey, which has th
 - `update_url`
   - : Is a link to an [extension update manifest](https://extensionworkshop.com/documentation/manage/updating-your-extension/). Note that the link must begin with "https". This key is for managing extension updates yourself (i.e. not through AMO).
 
-See the list of [valid Gecko versions](https://addons.mozilla.org/en-US/firefox/pages/appversions/).
+See the list of [valid Gecko versions](https://addons.mozilla.org/api/v5/applications/firefox/).
 
 #### Extension ID format
 
 The extension ID must be one of the following:
 
-- [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier "Generating_GUIDs")
+- [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)
 - A string formatted like an email address: `extensionname@example.org`
 
 The latter format is easier to generate and manipulate. Be aware that using a real email address here may attract spam.
@@ -94,8 +95,8 @@ Microsoft Edge stores its browser specific settings in the `edge` subkey, which 
 
   - : Boolean property which controls the placement of the [browser action](/en-US/docs/Mozilla/Add-ons/WebExtensions/Browser_actions).
 
-    - `true` is equivalent to setting [`browser_action.default_area`](/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action#syntax) to `navbar`.
-    - `false` is equivalent to setting [`browser_action.default_area`](/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action#syntax) to `menupanel`.
+    - `true` is equivalent to setting [`browser_action.default_area`](/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action#syntax) to `navbar`.
+    - `false` is equivalent to setting [`browser_action.default_area`](/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action#syntax) to `menupanel`.
 
 ### Safari properties
 

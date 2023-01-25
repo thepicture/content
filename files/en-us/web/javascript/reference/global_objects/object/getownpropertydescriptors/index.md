@@ -1,6 +1,7 @@
 ---
 title: Object.getOwnPropertyDescriptors()
 slug: Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors
+page-type: javascript-static-method
 tags:
   - JavaScript
   - Method
@@ -8,16 +9,17 @@ tags:
   - Polyfill
 browser-compat: javascript.builtins.Object.getOwnPropertyDescriptors
 ---
+
 {{JSRef}}
 
-The **`Object.getOwnPropertyDescriptors()`** method returns all
+The **`Object.getOwnPropertyDescriptors()`** static method returns all
 own property descriptors of a given object.
 
 {{EmbedInteractiveExample("pages/js/object-getownpropertydescriptors.html")}}
 
 ## Syntax
 
-```js
+```js-nolint
 Object.getOwnPropertyDescriptors(obj)
 ```
 
@@ -61,11 +63,11 @@ A _property descriptor_ is a record with some of the following attributes:
 
 ## Examples
 
-### Creating a shallow clone
+### Creating a shallow copy
 
 Whereas the {{jsxref("Object.assign()")}} method will only copy enumerable and own
 properties from a source object to a target object, you are able to use this method and
-{{jsxref("Object.create()")}} for a shallow copy between two unknown objects:
+{{jsxref("Object.create()")}} for a [shallow copy](/en-US/docs/Glossary/Shallow_copy) between two unknown objects:
 
 ```js
 Object.create(
@@ -88,8 +90,8 @@ superclass.prototype = {
 };
 function subclass() {}
 subclass.prototype = Object.create(
-  superclass.prototype,
-  {
+  superclass.prototype,
+  {
     // Define the subclass constructor, methods, and properties here
   }
 );
@@ -105,7 +107,7 @@ subclass.prototype = Object.create(
 
 ## See also
 
-- A polyfill of `Object.getOwnPropertyDescriptors` is available in [`core-js`](https://github.com/zloirock/core-js#ecmascript-object)
+- [Polyfill of `Object.getOwnPropertyDescriptors` in `core-js`](https://github.com/zloirock/core-js#ecmascript-object)
 - {{jsxref("Object.getOwnPropertyDescriptor()")}}
 - {{jsxref("Object.defineProperty()")}}
 - [Polyfill](https://github.com/tc39/proposal-object-getownpropertydescriptors)

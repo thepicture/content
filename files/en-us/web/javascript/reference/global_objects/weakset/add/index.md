@@ -1,6 +1,7 @@
 ---
 title: WeakSet.prototype.add()
 slug: Web/JavaScript/Reference/Global_Objects/WeakSet/add
+page-type: javascript-instance-method
 tags:
   - ECMAScript 2015
   - JavaScript
@@ -9,6 +10,7 @@ tags:
   - WeakSet
 browser-compat: javascript.builtins.WeakSet.add
 ---
+
 {{JSRef}}
 
 The **`add()`** method appends a new object to the end of a
@@ -18,7 +20,7 @@ The **`add()`** method appends a new object to the end of a
 
 ## Syntax
 
-```js
+```js-nolint
 add(value)
 ```
 
@@ -36,13 +38,13 @@ The `WeakSet` object.
 ### Using add
 
 ```js
-var ws = new WeakSet();
+const ws = new WeakSet();
 
 ws.add(window); // add the window object to the WeakSet
 
 ws.has(window); // true
 
-// Weakset only takes objects as arguments
+// WeakSet only takes objects as arguments
 ws.add(1);
 // results in "TypeError: Invalid value used in weak set" in Chrome
 // and "TypeError: 1 is not a non-null object" in Firefox

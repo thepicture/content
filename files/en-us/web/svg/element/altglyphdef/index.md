@@ -1,6 +1,7 @@
 ---
 title: <altGlyphDef>
 slug: Web/SVG/Element/altGlyphDef
+page-type: svg-element
 tags:
   - Deprecated
   - Element
@@ -10,6 +11,7 @@ tags:
   - SVG Text Content
 browser-compat: svg.elements.altGlyphDef
 ---
+
 {{SVGRef}}{{deprecated_header}}
 
 The **`<altGlyphDef>`** [SVG](/en-US/docs/Web/SVG) element defines a substitution representation for glyphs.
@@ -22,13 +24,13 @@ The **`<altGlyphDef>`** [SVG](/en-US/docs/Web/SVG) element defines a substitutio
 
 ### Global attributes
 
-*   [Core attributes](/en-US/docs/Web/SVG/Attribute#core_attributes)
+- [Core attributes](/en-US/docs/Web/SVG/Attribute#core_attributes)
 
 ### Specific attributes
 
-*None*
+None.
 
-## DOM Interface
+## DOM Interface
 
 This element implements the {{domxref("SVGAltGlyphDefElement")}} interface.
 
@@ -42,6 +44,6 @@ This element implements the {{domxref("SVGAltGlyphDefElement")}} interface.
 
 ## See also
 
-*   {{SVGElement("glyph")}}
-*   {{SVGElement("glyphRef")}}
-*   {{SVGElement("altGlyphDef")}}
+- {{SVGElement("glyph")}}
+- {{SVGElement("glyphRef")}}
+- {{SVGElement("altGlyphDef")}}

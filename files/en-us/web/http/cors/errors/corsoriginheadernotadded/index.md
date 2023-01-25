@@ -1,5 +1,5 @@
 ---
-title: 'Reason: CORS header ‘Origin’ cannot be added'
+title: "Reason: CORS header 'Origin' cannot be added"
 slug: Web/HTTP/CORS/Errors/CORSOriginHeaderNotAdded
 tags:
   - CORS
@@ -14,11 +14,12 @@ tags:
   - console
   - troubleshooting
 ---
+
 {{HTTPSidebar}}
 
 ## Reason
 
-```
+```plain
 Reason: CORS header 'Origin' cannot be added
 ```
 

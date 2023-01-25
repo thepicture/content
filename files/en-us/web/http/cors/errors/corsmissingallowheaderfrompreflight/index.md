@@ -1,6 +1,6 @@
 ---
 title: >-
-  Reason: missing token ‘xyz’ in CORS header ‘Access-Control-Allow-Headers’ from
+  Reason: missing token 'xyz' in CORS header 'Access-Control-Allow-Headers' from
   CORS preflight channel
 slug: Web/HTTP/CORS/Errors/CORSMissingAllowHeaderFromPreflight
 tags:
@@ -16,11 +16,12 @@ tags:
   - console
   - troubleshooting
 ---
+
 {{HTTPSidebar}}
 
 ## Reason
 
-```
+```plain
 Reason: missing token 'xyz' in CORS header 'Access-Control-Allow-Headers' from CORS preflight channel
 ```
 

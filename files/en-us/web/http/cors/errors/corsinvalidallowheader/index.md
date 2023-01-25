@@ -1,5 +1,5 @@
 ---
-title: 'Reason: invalid token ‘xyz’ in CORS header ‘Access-Control-Allow-Headers’'
+title: "Reason: invalid token 'xyz' in CORS header 'Access-Control-Allow-Headers'"
 slug: Web/HTTP/CORS/Errors/CORSInvalidAllowHeader
 tags:
   - CORS
@@ -14,11 +14,12 @@ tags:
   - console
   - troubleshooting
 ---
+
 {{HTTPSidebar}}
 
 ## Reason
 
-```
+```plain
 Reason: invalid token 'xyz' in CORS header 'Access-Control-Allow-Headers'
 ```
 
